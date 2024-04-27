@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.domain.EntityScan;
 
 
 @SpringBootApplication
-@EntityScan("com.traini8.model")
+@EntityScan("com.traini8.trainingCenterRegistry.model")
 public class TrainingCenterRegistryApplication {
 
 	public static void main(String[] args) {
