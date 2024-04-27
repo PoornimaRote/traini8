@@ -26,7 +26,6 @@ public class TrainingCenterController {
 
 	@PostMapping
 	public ResponseEntity<TrainingCenter> createTrainingCenter(@Valid @RequestBody TrainingCenter trainingCenter) {
-		trainingCenter.setCreatedOn(Date.from(Instant.now()));
 		TrainingCenter savedTrainingCenter = trainingCenterService.save(trainingCenter);
 		return new ResponseEntity<>(savedTrainingCenter, HttpStatus.CREATED);
 	}
